@@ -16,43 +16,37 @@
     <script src="https://naman-mahi.github.io/CodeShareHub/bd14b0bdaa-own.js"></script>
     <style>
       :root {
-        --primary-color: #4b0082;
-        /* Indigo */
-        --secondary-color: #ffffff;
-        /* White */
-        --accent-color: #f39c12;
-        /* Custom accent color */
-        --text-color: #333333;
-        /* Dark text */
+        --primary-color: rgb(254, 249, 245); /* Simplified primary color */
+        --secondary-color: #ffffff; /* White */
+        --accent-color: #f39c12; /* Custom accent color */
+        --text-color: #333333; /* Dark text */
       }
 
       body {
         font-family: var(--bs-font-monospace);
-        background-color: var(--secondary-color);
+        background: linear-gradient(var(--primary-color), var(--primary-color));
         color: var(--text-color);
+        /* font-style: italic; */
         margin: 0;
         padding: 0;
       }
 
       /* Custom Scrollbar */
       ::-webkit-scrollbar {
-        width: 8px;
+        width: 3px;
       }
 
       ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-        /* Track color */
+        background: #f1f1f1; /* Track color */
       }
 
       ::-webkit-scrollbar-thumb {
-        background: var(--primary-color);
-        /* Thumb color */
-        border-radius: 4px;
+        background: #14ff9d; /* Thumb color */
+        border-radius: 2px;
       }
 
       ::-webkit-scrollbar-thumb:hover {
-        background: var(--accent-color);
-        /* Hover color */
+        background: var(--accent-color); /* Hover color */
       }
 
       .hero {
@@ -66,7 +60,7 @@
       }
 
       blockquote {
-        border-left: 5px solid var(--primary-color);
+        border-left: 5px solid #5a997f;
         padding-left: 15px;
         font-style: italic;
         margin: 20px 0;
@@ -76,8 +70,7 @@
       .navbar {
         position: sticky;
         top: 0;
-        z-index: 1000;
-        /* Ensure it stays above other content */
+        z-index: 1000; /* Ensure it stays above other content */
       }
 
       /* Sticky Footer */
@@ -85,10 +78,10 @@
         position: sticky;
         padding: 0 !important;
         bottom: 0;
-        z-index: 1000;
-        /* Ensure it stays above other content */
+        z-index: 1000; /* Ensure it stays above other content */
         background-color: var(--secondary-color);
       }
+
       .bg_head {
         color: #000300;
         font-size: 25px;
@@ -101,18 +94,67 @@
         max-width: fit-content;
         position: relative;
       }
+
       .bg_head_home {
         background-size: 100% 100%;
         padding: 25px 30px;
+      }
+
+      .nav-link {
+        transition: font-weight 0.3s; /* Smooth transition for font weight */
+      }
+
+      .nav-link:hover {
+        font-weight: bold; /* Make the font bold on hover */
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #e6e1ec 0%, #a9f3c6 100%);
+        color: white; /* Adjust text color for better readability */
+      }
+
+      .card-body {
+        padding: 2rem; /* Adjust padding as necessary */
+      }
+
+      @media (max-width: 576px) {
+        .card-body {
+          padding: 1rem; /* Reduce padding for smaller screens */
+        }
+      }
+      section a {
+        text-decoration: none;
+        color: #333333;
+      }
+
+      section a:hover {
+        text-decoration: none;
+        font-weight: bold;
+        color: #333333;
+      }
+
+      .custom-heading {
+        display: inline-block; /* Make the element inline-block for padding */
+        position: relative; /* Positioning for the pseudo-element */
+        padding: 2px; /* Optional: Padding for visual spacing */
+      }
+
+      .custom-heading::after {
+        content: ""; /* Pseudo-element for the underline */
+        display: block;
+        width: 70%; /* Adjusted width of the underline */
+        height: 2px; /* Thickness of the underline */
+        background: rgb(226, 0, 106); /* Change the color of the underline */
+        position: absolute;
+        bottom: -5px; /* Gap between the text and underline */
       }
     </style>
   </head>
 
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Digital Dynamo</a>
+        <a class="navbar-brand fw-bold" href="#">Digital Dynamo</a>
         <a
           class="navbar-toggler"
           type="button"
@@ -143,138 +185,374 @@
         </div>
       </div>
     </nav>
-<!-- Hero Section -->
-<header id="home" class="hero text-center py-5">
-    <div class="container">
-      <h1 class="display-4">Digital Dynamo</h1>
-      <p class="lead">
-        Welcome to Digital Dynamo! We specialize in expert web development and graphic design services to help your brand shine online. Explore our projects and elevate your digital presence!
-      </p>
-      <a href="#services" class="btn btn-primary">See Our Services</a>
-    </div>
-  </header>
-  
-  <!-- Services Section -->
-  <section id="services" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Our Services</h2>
-  
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body text-center">
-              <h5 class="card-title">Web Development</h5>
-              <p class="card-text">Custom web solutions to enhance your online presence and engage your audience.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body text-center">
-              <h5 class="card-title">Graphic Design</h5>
-              <p class="card-text">Creative designs that capture your brand’s essence and communicate your message effectively.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body text-center">
-              <h5 class="card-title">E-commerce Solutions</h5>
-              <p class="card-text">Full-service e-commerce development to boost your online sales and streamline user experience.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="row mt-4">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body text-center">
-              <h5 class="card-title">Responsive Design</h5>
-              <p class="card-text">Designs that adapt seamlessly to any device for optimal user experience.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body text-center">
-              <h5 class="card-title">Brand Identity</h5>
-              <p class="card-text">Crafting memorable brand identities through logos, color schemes, and typography.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body text-center">
-              <h5 class="card-title">SEO & Analytics</h5>
-              <p class="card-text">Optimizing your website for search engines and providing insights through analytics.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-light">
+    <!-- Hero Section -->
+    <header id="home" class="hero text-center py-5">
       <div class="container">
-        <p class="bg_head bg_head_home mx-auto">About Us</p>
-
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-md-6">
-            <h3>Mission</h3>
-            <p>To empower businesses with effective digital solutions.</p>
+            <h1 class="display-4 text-primary fw-bold">
+              Welcome to Digital Dynamo
+            </h1>
+            <p class="lead mb-4 text-secondary">
+              We specialize in web development and graphic design services,
+              empowering your brand to shine online. Let us help you explore new
+              possibilities and elevate your digital presence!
+            </p>
+            <a href="#services" class="btn btn-primary btn-sm"
+              >Discover Our Services</a
+            >
           </div>
           <div class="col-md-6">
-            <h3>Values</h3>
-            <p>Integrity, Innovation, and Client Satisfaction.</p>
+            <img
+              src="hero.png"
+              alt="Digital Dynamo"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+      <div class="container">
+        .
+        <h2 class="text-center my-4 custom-heading">Our Services</h2>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-4 mb-4">
+            <div
+              class="card shadow-sm border-0 rounded-4 gradient-bg d-flex flex-column p-3"
+            >
+              <div class="card-body text-center flex-grow-1">
+                <h5 class="card-title text-primary">Web Development</h5>
+                <p class="card-text">
+                  Custom web solutions to enhance your online presence and
+                  engage your audience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="card shadow-sm border-0 rounded-4 gradient-bg d-flex flex-column p-3"
+            >
+              <div class="card-body text-center flex-grow-1">
+                <h5 class="card-title text-primary">Graphic Design</h5>
+                <p class="card-text">
+                  Creative designs that capture your brand’s essence and
+                  communicate your message effectively.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="card shadow-sm border-0 rounded-4 gradient-bg d-flex flex-column p-3"
+            >
+              <div class="card-body text-center flex-grow-1">
+                <h5 class="card-title text-primary">E-commerce Solutions</h5>
+                <p class="card-text">
+                  Full-service e-commerce development to boost your online sales
+                  and streamline user experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div
+              class="card shadow-sm border-0 rounded-4 gradient-bg d-flex flex-column p-3"
+            >
+              <div class="card-body text-center flex-grow-1">
+                <h5 class="card-title text-primary">Responsive Design</h5>
+                <p class="card-text">
+                  Designs that adapt seamlessly to any device for optimal user
+                  experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="card shadow-sm border-0 rounded-4 gradient-bg d-flex flex-column p-3"
+            >
+              <div class="card-body text-center flex-grow-1">
+                <h5 class="card-title text-primary">Brand Identity</h5>
+                <p class="card-text">
+                  Crafting memorable brand identities through logos, color
+                  schemes, and typography.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="card shadow-sm border-0 rounded-4 gradient-bg d-flex flex-column p-3"
+            >
+              <div class="card-body text-center flex-grow-1">
+                <h5 class="card-title text-primary">SEO & Analytics</h5>
+                <p class="card-text">
+                  Optimizing your website for search engines and providing
+                  insights through analytics.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center my-4 custom-heading">About Us</h2>
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="gradient-website-hosting-illustration.png"
+              alt="About Us Image"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="bd-callout bd-callout-info">
+              <h3 class="text-primary">Our Mission</h3>
+              <p class="text-muted">
+                At Digital Dynamo, we are passionate about empowering businesses
+                with innovative digital solutions that ignite growth and spark
+                success. Your vision is our mission!
+              </p>
+              <h3 class="text-warning">Our Values</h3>
+              <p class="text-muted">
+                We believe in integrity, creativity, and client satisfaction.
+                These values drive us to deliver exceptional results and foster
+                lasting partnerships. Together, we can achieve greatness!
+              </p>
+              <h3 class="text-danger">Why Choose Us?</h3>
+              <p class="text-muted">
+                With a dedicated team of passionate experts in web development
+                and graphic design, we tailor our services to your unique needs,
+                helping your brand shine in the digital landscape. Let’s create
+                something amazing together!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="testimonials" class="py-5">
       <div class="container">
-        <p class="bg_head bg_head_home mx-auto">Client Testimonials</p>
+        <h2 class="text-center my-4 custom-heading">Client Testimonials</h2>
 
-        <div class="row">
+        <div class="row mt-5">
           <div class="col-md-4">
-            <blockquote>
-              "Digital Dynamo transformed our online strategy!" - John Doe, CEO
-            </blockquote>
+            <div
+              class="testimonial-card rounded shadow-sm p-4"
+              style="height: 180px"
+            >
+              <blockquote class="blockquote text-center">
+                <p class="mb-0">
+                  "Digital Dynamo transformed our online presence in the UK!"
+                </p>
+                <footer class="blockquote-footer mt-2">
+                  Emily Carter,
+                  <cite title="Managing Director">Managing Director</cite>,
+                  <br />
+                  UK
+                </footer>
+              </blockquote>
+            </div>
           </div>
           <div class="col-md-4">
-            <blockquote>
-              "Their team is professional and highly skilled." - Jane Smith,
-              Marketing Director
-            </blockquote>
+            <div
+              class="testimonial-card rounded shadow-sm p-4"
+              style="height: 180px"
+            >
+              <blockquote class="blockquote text-center">
+                <p class="mb-0">"Their design work is simply exceptional!"</p>
+                <footer class="blockquote-footer mt-2">
+                  Luis Fernández, <cite title="CEO">CEO</cite>, <br />
+                  Spain
+                </footer>
+              </blockquote>
+            </div>
           </div>
           <div class="col-md-4">
-            <blockquote>
-              "Exceptional service and results!" - Mark Johnson, Business Owner
-            </blockquote>
+            <div
+              class="testimonial-card rounded shadow-sm p-4"
+              style="height: 180px"
+            >
+              <blockquote class="blockquote text-center">
+                <p class="mb-0">
+                  "We saw a significant boost in traffic thanks to their
+                  expertise!"
+                </p>
+                <footer class="blockquote-footer mt-2">
+                  Sofia Zhang,
+                  <cite title="Marketing Manager">Marketing Manager</cite>,
+                  <br />
+                  China
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div
+              class="testimonial-card rounded shadow-sm p-4"
+              style="height: 180px"
+            >
+              <blockquote class="blockquote text-center">
+                <p class="mb-0">
+                  "A fantastic team that exceeded our expectations!"
+                </p>
+                <footer class="blockquote-footer mt-2">
+                  Raj Patel, <cite title="Business Owner">Business Owner</cite>,
+                  <br />
+                  India
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="testimonial-card rounded shadow-sm p-4"
+              style="height: 180px"
+            >
+              <blockquote class="blockquote text-center">
+                <p class="mb-0">"Their innovative solutions are unmatched!"</p>
+                <footer class="blockquote-footer mt-2">
+                  Chloe Dupont,
+                  <cite title="Creative Director">Creative Director</cite>,
+                  <br />
+                  France
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="testimonial-card rounded shadow-sm p-4"
+              style="height: 180px"
+            >
+              <blockquote class="blockquote text-center">
+                <p class="mb-0">
+                  "Working with Digital Dynamo has been a game changer!"
+                </p>
+                <footer class="blockquote-footer mt-2">
+                  Mohammed Al-Farsi,
+                  <cite title="Startup Founder">Startup Founder</cite>, <br />
+                  UAE
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div
+              class="testimonial-card rounded shadow-sm p-4"
+              style="height: 180px"
+            >
+              <blockquote class="blockquote text-center">
+                <p class="mb-0">
+                  "Their team helped us navigate the digital landscape!"
+                </p>
+                <footer class="blockquote-footer mt-2">
+                  Ana Costa,
+                  <cite title="E-commerce Manager">E-commerce Manager</cite>,
+                  <br />
+                  Brazil
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="testimonial-card rounded shadow-sm p-4"
+              style="height: 180px"
+            >
+              <blockquote class="blockquote text-center">
+                <p class="mb-0">
+                  "Impressed by their creativity and professionalism!"
+                </p>
+                <footer class="blockquote-footer mt-2">
+                  Hiroshi Tanaka,
+                  <cite title="Tech Entrepreneur">Tech Entrepreneur</cite>,
+                  <br />
+                  Japan
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="testimonial-card rounded shadow-sm p-4"
+              style="height: 180px"
+            >
+              <blockquote class="blockquote text-center">
+                <p class="mb-0">
+                  "Their approach to branding is truly unique!"
+                </p>
+                <footer class="blockquote-footer mt-2">
+                  Olivia Müller,
+                  <cite title="Fashion Designer">Fashion Designer</cite>, <br />
+                  Germany
+                </footer>
+              </blockquote>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5">
       <div class="container">
-        <p class="bg_head bg_head_home mx-auto">Contact Us</p>
+        <h2 class="text-center my-4 custom-heading">Contact Us</h2>
 
-        <p>Email: contact@digitaldynamo.com</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Address: 123 Digital St, Tech City, USA</p>
-        <div class="text-center">
-          <a href="mailto:contact@digitaldynamo.com" class="btn btn-primary"
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="text-center mb-4">
+              <h5>Email</h5>
+              <p>
+                <a href="mailto:contact@digitaldynamo.com" class="text-primary">
+                  contact@digitaldynamo.com
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center mb-4">
+              <h5>Phone</h5>
+              <p class="text-muted">(123) 456-7890</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center mb-4">
+              <h5>Address</h5>
+              <p class="text-muted">123 Digital St, Tech City, USA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a
+            href="mailto:contact@digitaldynamo.com"
+            class="btn btn-warning p-2 rounded-4 btn-sm"
             >Get in Touch</a
           >
         </div>
       </div>
     </section>
+
     <span
       style="
         position: fixed;
@@ -344,6 +622,73 @@
         ></a>
       </p>
     </span>
+
+    <!-- Discover Section -->
+    <section class="text-dark pt-5 p-md-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase">About Us</h5>
+            <p>
+              We are a leading agency dedicated to providing top-notch services
+              that meet our clients' needs. Our mission is to deliver innovative
+              solutions that drive success.
+            </p>
+          </div>
+          <div class="col mb-4">
+            <h5 class="text-uppercase">Discover</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="col mb-4">
+            <h5 class="text-uppercase">Resources</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">API Reference</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Community Forum</a></li>
+              <li><a href="#">User Guides</a></li>
+            </ul>
+          </div>
+          <div class="col mb-4">
+            <h5 class="text-uppercase">Connect with Us</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+          <div class="col mb-4">
+            <h5 class="text-uppercase">Connect with Us</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+          <div class="col mb-4">
+            <h5 class="text-uppercase">Connect with Us</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+          <div class="col mb-4"></div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="text-center p-1 m-0">
