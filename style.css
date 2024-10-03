@@ -1,139 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
-    --primary-color: rgb(254, 249, 245); /* Simplified primary color */
-    --secondary-color: #ffffff; /* White */
-    --accent-color: #f39c12; /* Custom accent color */
-    --text-color: #333333; /* Dark text */
-  }
+  --primary-color: rgb(254, 249, 245); /* Simplified primary color */
+  --secondary-color: #ffffff; /* White */
+  --accent-color: #f39c12; /* Custom accent color */
+  --text-color: #333333; /* Dark text */
+}
 
-  body {
-    font-family: "Playwrite DE Grund", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    background: url("light-purple-blur-texture-vector.jpg");
-    background-size: cover; /* Use auto to keep the image's original size */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Keeps the background image fixed in place */
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-  }
+body {
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background: url("light-purple-blur-texture-vector.jpg");
+  background-size: cover; /* Use auto to keep the image's original size */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background image fixed in place */
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
 
-  /* Custom Scrollbar */
-  ::-webkit-scrollbar {
-    width: 3px;
-  }
-  
-p, a{
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+p,
+a {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Track color */
-  }
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
 
-  ::-webkit-scrollbar-thumb {
-    background: #14ff9d; /* Thumb color */
-    border-radius: 2px;
-  }
+::-webkit-scrollbar-thumb {
+  background: #14ff9d; /* Thumb color */
+  border-radius: 2px;
+}
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--accent-color); /* Hover color */
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color); /* Hover color */
+}
 
-  .hero {
-    color: var(--secondary-color);
-    padding: 60px 0;
-  }
+.hero {
+  color: var(--secondary-color);
+  padding: 60px 0;
+}
 
-  h2 {
-    margin: 30px 0;
-  }
+h2 {
+  margin: 30px 0;
+}
 
-  blockquote {
-    border-left: 5px solid #5a997f;
-    padding-left: 15px;
-    font-style: italic;
-    margin: 20px 0;
-  }
+blockquote {
+  border-left: 5px solid #5a997f;
+  padding-left: 15px;
+  font-style: italic;
+  margin: 20px 0;
+}
 
-  /* Sticky Navbar */
-  .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Ensure it stays above other content */
-  }
+/* Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+}
 
-  /* Sticky Footer */
-  footer {
-    position: sticky;
-    padding: 0 !important;
-    bottom: 0;
-    z-index: 1000; /* Ensure it stays above other content */
-  }
+/* Sticky Footer */
+footer {
+  position: sticky;
+  padding: 0 !important;
+  bottom: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+}
 
-  .bg_head {
-    color: #000300;
-    font-size: 25px;
-    font-weight: 900;
-    background-image: url(head_bg.webp);
-    background-repeat: no-repeat;
-    background-size: 30% 100%;
-    padding: 15px 30px;
-    margin-bottom: 0;
-    max-width: fit-content;
-    position: relative;
-  }
+.bg_head {
+  color: #000300;
+  font-size: 25px;
+  font-weight: 900;
+  background-image: url(head_bg.webp);
+  background-repeat: no-repeat;
+  background-size: 30% 100%;
+  padding: 15px 30px;
+  margin-bottom: 0;
+  max-width: fit-content;
+  position: relative;
+}
 
-  .bg_head_home {
-    background-size: 100% 100%;
-    padding: 25px 30px;
-  }
+.bg_head_home {
+  background-size: 100% 100%;
+  padding: 25px 30px;
+}
 
-  .nav-link {
-    transition: font-weight 0.3s; /* Smooth transition for font weight */
-  }
+.nav-link {
+  transition: font-weight 0.3s; /* Smooth transition for font weight */
+}
 
-  .nav-link:hover {
-    font-weight: bold; /* Make the font bold on hover */
-  }
+.nav-link:hover {
+  font-weight: bold; /* Make the font bold on hover */
+}
 
+.card-body {
+  padding: 2rem; /* Adjust padding as necessary */
+}
+
+@media (max-width: 576px) {
   .card-body {
-    padding: 2rem; /* Adjust padding as necessary */
+    padding: 1rem; /* Reduce padding for smaller screens */
   }
+}
+section a {
+  text-decoration: none;
+  color: #333333;
+}
 
-  @media (max-width: 576px) {
-    .card-body {
-      padding: 1rem; /* Reduce padding for smaller screens */
-    }
-  }
-  section a {
-    text-decoration: none;
-    color: #333333;
-  }
+section a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333333;
+}
 
-  section a:hover {
-    text-decoration: none;
-    font-weight: bold;
-    color: #333333;
-  }
+.custom-heading {
+  display: inline-block; /* Make the element inline-block for padding */
+  position: relative; /* Positioning for the pseudo-element */
+  padding: 2px; /* Optional: Padding for visual spacing */
+}
 
-  .custom-heading {
-    display: inline-block; /* Make the element inline-block for padding */
-    position: relative; /* Positioning for the pseudo-element */
-    padding: 2px; /* Optional: Padding for visual spacing */
-  }
-
-  .custom-heading::after {
-    content: ""; /* Pseudo-element for the underline */
-    display: block;
-    width: 70%; /* Adjusted width of the underline */
-    height: 2px; /* Thickness of the underline */
-    background: rgb(226, 0, 106); /* Change the color of the underline */
-    position: absolute;
-    bottom: -5px; /* Gap between the text and underline */
-  }
+.custom-heading::after {
+  content: ""; /* Pseudo-element for the underline */
+  display: block;
+  width: 70%; /* Adjusted width of the underline */
+  height: 2px; /* Thickness of the underline */
+  background: rgb(226, 0, 106); /* Change the color of the underline */
+  position: absolute;
+  bottom: -5px; /* Gap between the text and underline */
+}
