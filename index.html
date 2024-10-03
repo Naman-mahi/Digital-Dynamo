@@ -1,541 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Digital Dynamo - Freelance Web Development and Graphic Design Services"
-    />
-    <meta
-      name="keywords"
-      content="Web Development, Graphic Design, Freelance, Digital Marketing, UX/UI Design"
-    />
-    <meta name="author" content="Your Name or Company" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Digital Dynamo - Freelance Services" />
-    <meta
-      property="og:description"
-      content="Expert web development and graphic design solutions tailored to your needs."
-    />
-    <meta property="og:image" content="URL_to_your_logo_or_image.jpg" />
-    <meta property="og:url" content="https://yourwebsite.com" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Digital Dynamo - Freelance Services" />
-    <meta
-      name="twitter:description"
-      content="Expert web development and graphic design solutions tailored to your needs."
-    />
-    <meta name="twitter:image" content="URL_to_your_logo_or_image.jpg" />
-    <title>Digital Dynamo - Freelance Web Development & Graphic Design</title>
-    <linkrel
-      ="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    />
-    <script src="https://naman-mahi.github.io/CodeShareHub/bd14b0bdaa-own.js"></script>
-    <script src="https://naman-mahi.github.io/CodeShareHub/lAMU4YYwDijUVfB26mcgZt3SmFD1WpcQCWD.js" defer></script>
-    <script src="https://naman-mahi.github.io/CodeShareHub/RNDiwnwqS57yLT39kof7ggTioc1OXq2Ecmd.js" defer></script>
-   <link rel="stylesheet" href="style.css">
-  </head>
 
-  <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-transparent">
-      <div class="container">
-        <img
-          src="DigitalDynamo.png"
-          alt="Digital Dynamo Logo"
-          style="height: 40px"
-        />
-        <a
-          class="navbar-toggler border border-0"
-          type="button"
-          data-bs-toggle="modal"
-          data-bs-target="#menuModal"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Digital Dynamo - Freelance Web Development and Graphic Design Services" />
+  <meta name="keywords" content="Web Development, Graphic Design, Freelance, Digital Marketing, UX/UI Design" />
+  <meta name="author" content="Your Name or Company" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Digital Dynamo - Freelance Services" />
+  <meta property="og:description"
+    content="Expert web development and graphic design solutions tailored to your needs." />
+  <meta property="og:image" content="URL_to_your_logo_or_image.jpg" />
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Digital Dynamo - Freelance Services" />
+  <meta name="twitter:description"
+    content="Expert web development and graphic design solutions tailored to your needs." />
+  <meta name="twitter:image" content="URL_to_your_logo_or_image.jpg" />
+  <title>Digital Dynamo - Freelance Web Development & Graphic Design</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <script src="https://naman-mahi.github.io/CodeShareHub/bd14b0bdaa-own.js"></script>
+  <script src="https://naman-mahi.github.io/CodeShareHub/lAMU4YYwDijUVfB26mcgZt3SmFD1WpcQCWD.js" defer></script>
+  <script src="https://naman-mahi.github.io/CodeShareHub/RNDiwnwqS57yLT39kof7ggTioc1OXq2Ecmd.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container">
+      <img src="DigitalDynamo.png" alt="Digital Dynamo Logo" style="height: 40px" />
+      <a class="navbar-toggler border border-0" type="button" data-bs-toggle="modal" data-bs-target="#menuModal"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-between align-items-center">
+          <img src="DigitalDynamo.png" alt="Digital Dynamo Logo" style="height: 40px" />
+          <a type="button" id="xrose" data-bs-dismiss="modal" aria-label="Close"
+            style="border: none; background: none; cursor: pointer">
+            <i class="fa-duotone fa-solid fa-hexagon-xmark fa-2xl"></i>
+          </a>
+        </div>
+        <div class="modal-body">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" data-bs-dismiss="modal" aria-label="Close"
+                onclick="document.getElementById('xrose').click()" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" data-bs-dismiss="modal" aria-label="Close"
+                onclick="document.getElementById('xrose').click()" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Testimonials</a>
+              <a class="nav-link" data-bs-dismiss="modal" aria-label="Close"
+                onclick="document.getElementById('xrose').click()" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" data-bs-dismiss="modal" aria-label="Close"
+                onclick="document.getElementById('xrose').click()" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-dismiss="modal" aria-label="Close"
+                onclick="document.getElementById('xrose').click()" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="menuModal"
-      tabindex="-1"
-      aria-labelledby="menuModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div
-            class="modal-header d-flex justify-content-between align-items-center"
-          >
-            <img
-              src="DigitalDynamo.png"
-              alt="Digital Dynamo Logo"
-              style="height: 40px"
-            />
-            <a
-              type="button"
-              id="xrose"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-              style="border: none; background: none; cursor: pointer"
-            >
-              <i class="fa-duotone fa-solid fa-hexagon-xmark fa-2xl"></i>
-            </a>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <header id="home" class="hero text-center py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="display-4 text-primary fw-bold">
+            Welcome to <strong style="color: #f4254e">Digital Dynamo</strong>
+          </h2>
+          <p class="lead mb-4 text-secondary">
+            We specialize in web development and graphic design services,
+            empowering your brand to shine online. Let us help you explore new
+            possibilities and elevate your digital presence!
+          </p>
+          <a href="#services" class="btn bg-transparent border border-1 rounded-5 btn-md">Discover Our Services</a>
+        </div>
+        <div class="col-md-6">
+          <img src="hero.png" alt="Digital Dynamo" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      .
+      <h2 class="text-center my-4 custom-heading">Our Services</h2>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
+            <div class="card-body text-center flex-grow-1">
+              <h5 class="card-title text-primary">Web Development</h5>
+              <p class="card-text">
+                Custom web solutions to enhance your online presence and
+                engage your audience.
+              </p>
+            </div>
           </div>
-
-          <div class="modal-body">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                  onclick="document.getElementById('xrose').click()"
-                  href="#home"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                  onclick="document.getElementById('xrose').click()"
-                  href="#services"
-                  >Services</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                  onclick="document.getElementById('xrose').click()"
-                  href="#about"
-                  >About</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                  onclick="document.getElementById('xrose').click()"
-                  href="#testimonials"
-                  >Testimonials</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                  onclick="document.getElementById('xrose').click()"
-                  href="#contact"
-                  >Contact</a
-                >
-              </li>
-            </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
+            <div class="card-body text-center flex-grow-1">
+              <h5 class="card-title text-primary">Graphic Design</h5>
+              <p class="card-text">
+                Creative designs that capture your brand’s essence and
+                communicate your message effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
+            <div class="card-body text-center flex-grow-1">
+              <h5 class="card-title text-primary">E-commerce Solutions</h5>
+              <p class="card-text">
+                Full-service e-commerce development to boost your online sales
+                and streamline user experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
+            <div class="card-body text-center flex-grow-1">
+              <h5 class="card-title text-primary">Responsive Design</h5>
+              <p class="card-text">
+                Designs that adapt seamlessly to any device for optimal user
+                experience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
+            <div class="card-body text-center flex-grow-1">
+              <h5 class="card-title text-primary">Brand Identity</h5>
+              <p class="card-text">
+                Crafting memorable brand identities through logos, color
+                schemes, and typography.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
+            <div class="card-body text-center flex-grow-1">
+              <h5 class="card-title text-primary">SEO & Analytics</h5>
+              <p class="card-text">
+                Optimizing your website for search engines and providing
+                insights through analytics.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Hero Section -->
-    <header id="home" class="hero text-center py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <h2 class="display-4 text-primary fw-bold">
-              Welcome to <strong style="color: #f4254e">Digital Dynamo</strong>
-            </h2>
-            <p class="lead mb-4 text-secondary">
-              We specialize in web development and graphic design services,
-              empowering your brand to shine online. Let us help you explore new
-              possibilities and elevate your digital presence!
+  </section>
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center my-4 custom-heading">About Us</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="gradient-website-hosting-illustration.png" alt="About Us Image" class="img-fluid" />
+        </div>
+        <div class="col-md-6">
+          <div class="bd-callout bd-callout-info">
+            <h3 class="text-primary">Our Mission</h3>
+            <p class="text-muted">
+              At Digital Dynamo, we are passionate about empowering businesses
+              with innovative digital solutions that ignite growth and spark
+              success. Your vision is our mission!
             </p>
-            <a
-              href="#services"
-              class="btn bg-transparent border border-1 rounded-5 btn-md"
-              >Discover Our Services</a
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src="hero.png"
-              alt="Digital Dynamo"
-              class="img-fluid rounded"
-            />
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- Services Section -->
-    <section id="services" class="py-5">
-      <div class="container">
-        .
-        <h2 class="text-center my-4 custom-heading">Our Services</h2>
-
-        <div class="row justify-content-center mt-5">
-          <div class="col-md-4 mb-4">
-            <div
-              class="card shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3"
-            >
-              <div class="card-body text-center flex-grow-1">
-                <h5 class="card-title text-primary">Web Development</h5>
-                <p class="card-text">
-                  Custom web solutions to enhance your online presence and
-                  engage your audience.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div
-              class="card shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3"
-            >
-              <div class="card-body text-center flex-grow-1">
-                <h5 class="card-title text-primary">Graphic Design</h5>
-                <p class="card-text">
-                  Creative designs that capture your brand’s essence and
-                  communicate your message effectively.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div
-              class="card shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3"
-            >
-              <div class="card-body text-center flex-grow-1">
-                <h5 class="card-title text-primary">E-commerce Solutions</h5>
-                <p class="card-text">
-                  Full-service e-commerce development to boost your online sales
-                  and streamline user experience.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-4">
-            <div
-              class="card shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3"
-            >
-              <div class="card-body text-center flex-grow-1">
-                <h5 class="card-title text-primary">Responsive Design</h5>
-                <p class="card-text">
-                  Designs that adapt seamlessly to any device for optimal user
-                  experience.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div
-              class="card shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3"
-            >
-              <div class="card-body text-center flex-grow-1">
-                <h5 class="card-title text-primary">Brand Identity</h5>
-                <p class="card-text">
-                  Crafting memorable brand identities through logos, color
-                  schemes, and typography.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div
-              class="card shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3"
-            >
-              <div class="card-body text-center flex-grow-1">
-                <h5 class="card-title text-primary">SEO & Analytics</h5>
-                <p class="card-text">
-                  Optimizing your website for search engines and providing
-                  insights through analytics.
-                </p>
-              </div>
-            </div>
+            <h3 class="text-warning">Our Values</h3>
+            <p class="text-muted">
+              We believe in integrity, creativity, and client satisfaction.
+              These values drive us to deliver exceptional results and foster
+              lasting partnerships. Together, we can achieve greatness!
+            </p>
+            <h3 class="text-danger">Why Choose Us?</h3>
+            <p class="text-muted">
+              With a dedicated team of passionate experts in web development
+              and graphic design, we tailor our services to your unique needs,
+              helping your brand shine in the digital landscape. Let’s create
+              something amazing together!
+            </p>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5">
-      <div class="container">
-        <h2 class="text-center my-4 custom-heading">About Us</h2>
-
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img
-              src="gradient-website-hosting-illustration.png"
-              alt="About Us Image"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-md-6">
-            <div class="bd-callout bd-callout-info">
-              <h3 class="text-primary">Our Mission</h3>
-              <p class="text-muted">
-                At Digital Dynamo, we are passionate about empowering businesses
-                with innovative digital solutions that ignite growth and spark
-                success. Your vision is our mission!
+    </div>
+  </section>
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2 class="text-center my-4 custom-heading">Client Testimonials</h2>
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="testimonial-card rounded shadow-sm p-4" style="height: 180px">
+            <blockquote class="blockquote text-center">
+              <p class="mb-0">
+                "Digital Dynamo transformed our online presence in the UK!"
               </p>
-              <h3 class="text-warning">Our Values</h3>
-              <p class="text-muted">
-                We believe in integrity, creativity, and client satisfaction.
-                These values drive us to deliver exceptional results and foster
-                lasting partnerships. Together, we can achieve greatness!
+              <footer class="blockquote-footer mt-2">
+                Emily Carter,
+                <cite title="Managing Director">Managing Director</cite>,
+                <br />
+                UK
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card rounded shadow-sm p-4" style="height: 180px">
+            <blockquote class="blockquote text-center">
+              <p class="mb-0">"Their design work is simply exceptional!"</p>
+              <footer class="blockquote-footer mt-2">
+                Luis Fernández, <cite title="CEO">CEO</cite>, <br />
+                Spain
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card rounded shadow-sm p-4" style="height: 180px">
+            <blockquote class="blockquote text-center">
+              <p class="mb-0">
+                "We saw a significant boost in traffic thanks to their
+                expertise!"
               </p>
-              <h3 class="text-danger">Why Choose Us?</h3>
-              <p class="text-muted">
-                With a dedicated team of passionate experts in web development
-                and graphic design, we tailor our services to your unique needs,
-                helping your brand shine in the digital landscape. Let’s create
-                something amazing together!
-              </p>
-            </div>
+              <footer class="blockquote-footer mt-2">
+                Sofia Zhang,
+                <cite title="Marketing Manager">Marketing Manager</cite>,
+                <br />
+                China
+              </footer>
+            </blockquote>
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="testimonials" class="py-5">
-      <div class="container">
-        <h2 class="text-center my-4 custom-heading">Client Testimonials</h2>
-
-        <div class="row mt-5">
-          <div class="col-md-4">
-            <div
-              class="testimonial-card rounded shadow-sm p-4"
-              style="height: 180px"
-            >
-              <blockquote class="blockquote text-center">
-                <p class="mb-0">
-                  "Digital Dynamo transformed our online presence in the UK!"
-                </p>
-                <footer class="blockquote-footer mt-2">
-                  Emily Carter,
-                  <cite title="Managing Director">Managing Director</cite>,
-                  <br />
-                  UK
-                </footer>
-              </blockquote>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="testimonial-card rounded shadow-sm p-4"
-              style="height: 180px"
-            >
-              <blockquote class="blockquote text-center">
-                <p class="mb-0">"Their design work is simply exceptional!"</p>
-                <footer class="blockquote-footer mt-2">
-                  Luis Fernández, <cite title="CEO">CEO</cite>, <br />
-                  Spain
-                </footer>
-              </blockquote>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="testimonial-card rounded shadow-sm p-4"
-              style="height: 180px"
-            >
-              <blockquote class="blockquote text-center">
-                <p class="mb-0">
-                  "We saw a significant boost in traffic thanks to their
-                  expertise!"
-                </p>
-                <footer class="blockquote-footer mt-2">
-                  Sofia Zhang,
-                  <cite title="Marketing Manager">Marketing Manager</cite>,
-                  <br />
-                  China
-                </footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-md-4">
-            <div
-              class="testimonial-card rounded shadow-sm p-4"
-              style="height: 180px"
-            >
-              <blockquote class="blockquote text-center">
-                <p class="mb-0">
-                  "A fantastic team that exceeded our expectations!"
-                </p>
-                <footer class="blockquote-footer mt-2">
-                  Raj Patel, <cite title="Business Owner">Business Owner</cite>,
-                  <br />
-                  India
-                </footer>
-              </blockquote>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="testimonial-card rounded shadow-sm p-4"
-              style="height: 180px"
-            >
-              <blockquote class="blockquote text-center">
-                <p class="mb-0">"Their innovative solutions are unmatched!"</p>
-                <footer class="blockquote-footer mt-2">
-                  Chloe Dupont,
-                  <cite title="Creative Director">Creative Director</cite>,
-                  <br />
-                  France
-                </footer>
-              </blockquote>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="testimonial-card rounded shadow-sm p-4"
-              style="height: 180px"
-            >
-              <blockquote class="blockquote text-center">
-                <p class="mb-0">
-                  "Working with Digital Dynamo has been a game changer!"
-                </p>
-                <footer class="blockquote-footer mt-2">
-                  Mohammed Al-Farsi,
-                  <cite title="Startup Founder">Startup Founder</cite>, <br />
-                  UAE
-                </footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-md-4">
-            <div
-              class="testimonial-card rounded shadow-sm p-4"
-              style="height: 180px"
-            >
-              <blockquote class="blockquote text-center">
-                <p class="mb-0">
-                  "Their team helped us navigate the digital landscape!"
-                </p>
-                <footer class="blockquote-footer mt-2">
-                  Ana Costa,
-                  <cite title="E-commerce Manager">E-commerce Manager</cite>,
-                  <br />
-                  Brazil
-                </footer>
-              </blockquote>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="testimonial-card rounded shadow-sm p-4"
-              style="height: 180px"
-            >
-              <blockquote class="blockquote text-center">
-                <p class="mb-0">
-                  "Impressed by their creativity and professionalism!"
-                </p>
-                <footer class="blockquote-footer mt-2">
-                  Hiroshi Tanaka,
-                  <cite title="Tech Entrepreneur">Tech Entrepreneur</cite>,
-                  <br />
-                  Japan
-                </footer>
-              </blockquote>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="testimonial-card rounded shadow-sm p-4"
-              style="height: 180px"
-            >
-              <blockquote class="blockquote text-center">
-                <p class="mb-0">
-                  "Their approach to branding is truly unique!"
-                </p>
-                <footer class="blockquote-footer mt-2">
-                  Olivia Müller,
-                  <cite title="Fashion Designer">Fashion Designer</cite>, <br />
-                  Germany
-                </footer>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-      <div class="container">
-        <h2 class="text-center my-4 custom-heading">Contact Us</h2>
-
-        <div class="row mt-5">
-          <div class="col-md-4">
-            <div class="text-center mb-4">
-              <h5>Email</h5>
-              <p>
-                <a href="mailto:contact@digitaldynamo.com" class="text-primary">
-                  contact@digitaldynamo.com
-                </a>
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="testimonial-card rounded shadow-sm p-4" style="height: 180px">
+            <blockquote class="blockquote text-center">
+              <p class="mb-0">
+                "A fantastic team that exceeded our expectations!"
               </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="text-center mb-4">
-              <h5>Phone</h5>
-              <p class="text-muted">+91 (749) 895-0562</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="text-center mb-4">
-              <h5>Address</h5>
-              <p class="text-muted">29 Hyderabd, Telangana, India</p>
-            </div>
+              <footer class="blockquote-footer mt-2">
+                Raj Patel, <cite title="Business Owner">Business Owner</cite>,
+                <br />
+                India
+              </footer>
+            </blockquote>
           </div>
         </div>
-
-        <div class="text-center mt-4">
-          <a
-            href="mailto:contact@digitaldynamo.com"
-            class="btn bg-transparent border border-1 rounded-5 btn-md"
-            >Get in Touch</a
-          >
+        <div class="col-md-4">
+          <div class="testimonial-card rounded shadow-sm p-4" style="height: 180px">
+            <blockquote class="blockquote text-center">
+              <p class="mb-0">"Their innovative solutions are unmatched!"</p>
+              <footer class="blockquote-footer mt-2">
+                Chloe Dupont,
+                <cite title="Creative Director">Creative Director</cite>,
+                <br />
+                France
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card rounded shadow-sm p-4" style="height: 180px">
+            <blockquote class="blockquote text-center">
+              <p class="mb-0">
+                "Working with Digital Dynamo has been a game changer!"
+              </p>
+              <footer class="blockquote-footer mt-2">
+                Mohammed Al-Farsi,
+                <cite title="Startup Founder">Startup Founder</cite>, <br />
+                UAE
+              </footer>
+            </blockquote>
+          </div>
         </div>
       </div>
-    </section>
-
-    <span
-      style="
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="testimonial-card rounded shadow-sm p-4" style="height: 180px">
+            <blockquote class="blockquote text-center">
+              <p class="mb-0">
+                "Their team helped us navigate the digital landscape!"
+              </p>
+              <footer class="blockquote-footer mt-2">
+                Ana Costa,
+                <cite title="E-commerce Manager">E-commerce Manager</cite>,
+                <br />
+                Brazil
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card rounded shadow-sm p-4" style="height: 180px">
+            <blockquote class="blockquote text-center">
+              <p class="mb-0">
+                "Impressed by their creativity and professionalism!"
+              </p>
+              <footer class="blockquote-footer mt-2">
+                Hiroshi Tanaka,
+                <cite title="Tech Entrepreneur">Tech Entrepreneur</cite>,
+                <br />
+                Japan
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card rounded shadow-sm p-4" style="height: 180px">
+            <blockquote class="blockquote text-center">
+              <p class="mb-0">
+                "Their approach to branding is truly unique!"
+              </p>
+              <footer class="blockquote-footer mt-2">
+                Olivia Müller,
+                <cite title="Fashion Designer">Fashion Designer</cite>, <br />
+                Germany
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center my-4 custom-heading">Contact Us</h2>
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="text-center mb-4">
+            <h5>Email</h5>
+            <p>
+              <a href="mailto:contact@digitaldynamo.com" class="text-primary">
+                contact@digitaldynamo.com
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center mb-4">
+            <h5>Phone</h5>
+            <p class="text-muted">+91 (749) 895-0562</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center mb-4">
+            <h5>Address</h5>
+            <p class="text-muted">29 Hyderabd, Telangana, India</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="mailto:contact@digitaldynamo.com" class="btn bg-transparent border border-1 rounded-5 btn-md">Get in
+          Touch</a>
+      </div>
+    </div>
+  </section>
+  <span style="
         position: fixed;
         left: 0;
         top: 50%;
@@ -543,181 +405,147 @@
         background-color: black;
         padding: 5px;
         transition: all 2s; /* Transition for 1 second */
-      "
-    >
-      <p
-        style="
+      ">
+    <p style="
           writing-mode: vertical-rl;
           transform: rotate(180deg);
           color: rgb(113, 250, 49);
           margin: 0;
           padding: 0;
           transition: all 2s; /* Transition for 1 second */
-        "
-      >
-        © 2024 Digital Dynamo
-      </p>
-    </span>
-    <span
-      style="
+        ">
+      © 2024 Digital Dynamo
+    </p>
+  </span>
+  <span style="
         position: fixed;
         right: 0;
         top: 50%;
         transform: translateY(-50%);
         /* background-color: black; */
         padding: 5px;
-      "
-    >
-      <p
-        style="
+      ">
+    <p style="
           writing-mode: vertical-rl;
           transform: rotate(0deg);
           color: rgb(113, 250, 49);
           margin: 0;
           padding: 0;
-        "
-      >
-        <a class="p-2" href="#" style="color: rgb(113, 250, 49)"
-          ><i
-            class="fa-brands fa-square-instagram fa-lg"
-            style="color: #f4254e"
-          ></i
-        ></a>
-        <a class="p-2" href="#" style="color: rgb(113, 250, 49)"
-          ><i
-            class="fa-brands fa-square-whatsapp fa-lg"
-            style="color: #04d755"
-          ></i
-        ></a>
-        <a class="p-2" href="#" style="color: rgb(113, 250, 49)"
-          ><i
-            class="fa-brands fa-square-facebook fa-lg"
-            style="color: #1964e6"
-          ></i
-        ></a>
-        <a class="p-2" href="#" style="color: rgb(113, 250, 49)"
-          ><i
-            class="fa-sharp fa-solid fa-share fa-lg"
-            style="color: #a70be0"
-          ></i
-        ></a>
-      </p>
-    </span>
-
-    <span
-      style="
+        ">
+      <a class="p-2" href="#" style="color: rgb(113, 250, 49)"><i class="fa-brands fa-square-instagram fa-lg"
+          style="color: #f4254e"></i></a>
+      <a class="p-2" href="#" style="color: rgb(113, 250, 49)"><i class="fa-brands fa-square-whatsapp fa-lg"
+          style="color: #04d755"></i></a>
+      <a class="p-2" href="#" style="color: rgb(113, 250, 49)"><i class="fa-brands fa-square-facebook fa-lg"
+          style="color: #1964e6"></i></a>
+      <a class="p-2" href="#" style="color: rgb(113, 250, 49)"><i class="fa-sharp fa-solid fa-share fa-lg"
+          style="color: #a70be0"></i></a>
+    </p>
+  </span>
+  <span style="
         position: fixed;
         left: 2%;
         top: 80%;
         transform: translateY(-50%); /* background-color: black; */
         padding: 5px;
         z-index: 1000;
-      "
-      class="btn border btn-lg border-0 d-md-none"
-    >
-      <i
-        class="fa-duotone fa-solid fa-bars fa-2lx"
-        data-bs-toggle="modal"
-        data-bs-target="#menuModal"
-      ></i>
-    </span>
-
-    <!-- Discover Section -->
-    <section class="text-dark pt-5 p-md-5">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-3 mb-4">
-            <h5 class="text-uppercase">About Us</h5>
-            <p>
-              We are a leading agency dedicated to providing top-notch services
-              that meet our clients' needs. Our mission is to deliver innovative
-              solutions that drive success.
-            </p>
-          </div>
-          <div class="col mb-4">
-            <h5 class="text-uppercase">Discover</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Our Services</a></li>
-              <li><a href="#">Case Studies</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">FAQs</a></li>
-            </ul>
-          </div>
-          <div class="col mb-4">
-            <h5 class="text-uppercase">Resources</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Documentation</a></li>
-              <li><a href="#">API Reference</a></li>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Community Forum</a></li>
-              <li><a href="#">User Guides</a></li>
-            </ul>
-          </div>
-          <div class="col mb-4">
-            <h5 class="text-uppercase">Connect with Us</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">YouTube</a></li>
-            </ul>
-          </div>
-          <div class="col mb-4">
-            <h5 class="text-uppercase">Connect with Us</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">YouTube</a></li>
-            </ul>
-          </div>
-          <div class="col mb-4">
-            <h5 class="text-uppercase">Connect with Us</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">YouTube</a></li>
-            </ul>
-          </div>
-          <div class="col mb-4"></div>
+      " class="btn border btn-lg border-0 d-md-none">
+    <i class="fa-duotone fa-solid fa-bars fa-2lx" data-bs-toggle="modal" data-bs-target="#menuModal"></i>
+  </span>
+  <!-- Discover Section -->
+  <section class="text-dark pt-5 p-md-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase">About Us</h5>
+          <p>
+            We are a leading agency dedicated to providing top-notch services
+            that meet our clients' needs. Our mission is to deliver innovative
+            solutions that drive success.
+          </p>
         </div>
+        <div class="col mb-4">
+          <h5 class="text-uppercase">Discover</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col mb-4">
+          <h5 class="text-uppercase">Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Community Forum</a></li>
+            <li><a href="#">User Guides</a></li>
+          </ul>
+        </div>
+        <div class="col mb-4">
+          <h5 class="text-uppercase">Connect with Us</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="col mb-4">
+          <h5 class="text-uppercase">Connect with Us</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="col mb-4">
+          <h5 class="text-uppercase">Connect with Us</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="col mb-4"></div>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center p-1 m-0">
-      <p>&copy; 2024 Digital Dynamo. All rights reserved.</p>
-    </footer>
-    <script>
-      // Initialize the chat widget once the DOM is loaded
-      document.addEventListener("DOMContentLoaded", () => {
-        const agentImageUrl =
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6hn5KYtSp4HnteAMMJU0AfLiTn6IKsRXrrg&s";
-        const agentName = "Chat with Digital Dynamo AI";
-        const websiteDeveloper = "Namanmahi";
-        createChatWidget(agentImageUrl, agentName, websiteDeveloper);
-      });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const navbarLinks = document.querySelectorAll(".navbar-nav a");
-
-        navbarLinks.forEach((link) => {
-          link.addEventListener("click", function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute("href").substring(1);
-            const targetSection = document.getElementById(targetId);
-            targetSection.scrollIntoView({ behavior: "smooth" });
-          });
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="text-center p-1 m-0">
+    <p>&copy; 2024 Digital Dynamo. All rights reserved.</p>
+  </footer>
+  <script>
+    // Initialize the chat widget once the DOM is loaded
+    document.addEventListener("DOMContentLoaded", () => {
+      const agentImageUrl =
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6hn5KYtSp4HnteAMMJU0AfLiTn6IKsRXrrg&s";
+      const agentName = "Chat with Digital Dynamo AI";
+      const websiteDeveloper = "Namanmahi";
+      createChatWidget(agentImageUrl, agentName, websiteDeveloper);
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navbarLinks = document.querySelectorAll(".navbar-nav a");
+      navbarLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          const targetSection = document.getElementById(targetId);
+          targetSection.scrollIntoView({ behavior: "smooth" });
         });
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
