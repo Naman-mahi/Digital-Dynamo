@@ -629,14 +629,19 @@
       >
     </footer>
     <script>
-        // Initialize the chat widget once the DOM is loaded
-  document.addEventListener("DOMContentLoaded", () => {
-    const agentImageUrl =
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6hn5KYtSp4HnteAMMJU0AfLiTn6IKsRXrrg&s";
-    const agentName = "Chat with Digital Dynamo AI";
-    const websiteDeveloper = "Namanmahi";
-    const SupportIcon = "fa-duotone fa-solid fa-headset"; // Only the class names
-        createChatWidget(agentImageUrl, agentName, websiteDeveloper,SupportIcon);
+      // Initialize the chat widget once the DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        const agentImageUrl =
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6hn5KYtSp4HnteAMMJU0AfLiTn6IKsRXrrg&s";
+        const agentName = "Chat with Digital Dynamo AI";
+        const websiteDeveloper = "Namanmahi";
+        const SupportIcon = "fa-duotone fa-solid fa-headset fs-2 "; // Only the class names
+        createChatWidget(
+          agentImageUrl,
+          agentName,
+          websiteDeveloper,
+          SupportIcon
+        );
       });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
