@@ -12,7 +12,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background: url("abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg");
+  /* background: url("abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg"); */
   background-size: cover; /* Use auto to keep the image's original size */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */

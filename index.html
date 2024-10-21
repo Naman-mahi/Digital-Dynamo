@@ -1,66 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Digital Dynamo - Freelance Web Development and Graphic Design Services"
-    />
-    <meta
-      name="keywords"
-      content="Web Development, Graphic Design, Freelance, Digital Marketing, UX/UI Design"
-    />
-    <meta name="author" content="Your Name or Company" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Digital Dynamo - Freelance Services" />
-    <meta
-      property="og:description"
-      content="Expert web development and graphic design solutions tailored to your needs."
-    />
-    <meta property="og:image" content="URL_to_your_logo_or_image.jpg" />
-    <meta property="og:url" content="https://yourwebsite.com" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Digital Dynamo - Freelance Services" />
-    <meta
-      name="twitter:description"
-      content="Expert web development and graphic design solutions tailored to your needs."
-    />
-    <meta name="twitter:image" content="URL_to_your_logo_or_image.jpg" />
-    <title>Digital Dynamo - Freelance Web Development & Graphic Design</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    />
-    <script src="https://naman-mahi.github.io/CodeShareHub/bd14b0bdaa-own.js"></script>
-    <script
-      src="https://naman-mahi.github.io/CodeShareHub/lAMU4YYwDijUVfB26mcgZt3SmFD1WpcQCWD.js"
-      defer
-    ></script>
-    <script
-      src="https://naman-mahi.github.io/CodeShareHub/RNDiwnwqS57yLT39kof7ggTioc1OXq2Ecmd.js"
-      defer
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <!-- Navigation Bar -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Digital Dynamo - Freelance Web Development and Graphic Design Services" />
+  <meta name="keywords" content="Web Development, Graphic Design, Freelance, Digital Marketing, UX/UI Design" />
+  <meta name="author" content="Your Name or Company" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Digital Dynamo - Freelance Services" />
+  <meta property="og:description"
+    content="Expert web development and graphic design solutions tailored to your needs." />
+  <meta property="og:image" content="URL_to_your_logo_or_image.jpg" />
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Digital Dynamo - Freelance Services" />
+  <meta name="twitter:description"
+    content="Expert web development and graphic design solutions tailored to your needs." />
+  <meta name="twitter:image" content="URL_to_your_logo_or_image.jpg" />
+  <title>Digital Dynamo - Freelance Web Development & Graphic Design</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <script src="https://naman-mahi.github.io/CodeShareHub/bd14b0bdaa-own.js"></script>
+  <script src="https://naman-mahi.github.io/CodeShareHub/lAMU4YYwDijUVfB26mcgZt3SmFD1WpcQCWD.js" defer></script>
+  <script src="https://naman-mahi.github.io/CodeShareHub/RNDiwnwqS57yLT39kof7ggTioc1OXq2Ecmd.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Add your CSS here */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loader {
+      width: 45px;
+      aspect-ratio: 1;
+      --c: no-repeat linear-gradient(#f0efef 0 0);
+      background: var(--c), var(--c), var(--c);
+      animation:
+        l15-1 1s infinite,
+        l15-2 1s infinite;
+    }
+
+    @keyframes l15-1 {
+
+      0%,
+      100% {
+        background-size: 20% 100%;
+      }
+
+      33%,
+      66% {
+        background-size: 20% 40%;
+      }
+    }
+
+    @keyframes l15-2 {
+
+      0%,
+      33% {
+        background-position: 0 0, 50% 100%, 100% 100%;
+      }
+
+      66%,
+      100% {
+        background-position: 100% 0, 0 100%, 50% 100%;
+      }
+    }
+    :root {
+    --px-theme-1: #3498db; /* Bright Blue */
+    --px-theme-2: #2ecc71; /* Emerald Green */
+    --px-theme-3: #e74c3c; /* Flat Red */
+    --px-theme-4: #f39c12; /* Orange */
+    --px-theme-5: #9b59b6; /* Amethyst Purple */
+}
+    .left-effects {
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: var(--px-theme-2);
+    -webkit-filter: blur(100px);
+    filter: blur(100px);
+    opacity: 0.25;
+    pointer-events: none;
+    z-index: -1;
+}
+.right-effects {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    bottom: auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: var(--px-theme-3);
+    -webkit-filter: blur(100px);
+    filter: blur(100px);
+    opacity: 0.25;
+    pointer-events: none;
+    z-index: -1;
+}
+
+  </style>
+ 
+<script>
+  function updateColors() {
+      const colors = [
+          '#3498db', '#2ecc71', '#e74c3c', '#f39c12', '#9b59b6'
+      ];
+      const today = new Date();
+      const colorIndex = today.getDay() % colors.length;
+      
+      document.documentElement.style.setProperty('--px-theme-1', colors[colorIndex]);
+      document.documentElement.style.setProperty('--px-theme-2', colors[(colorIndex + 1) % colors.length]);
+      document.documentElement.style.setProperty('--px-theme-3', colors[(colorIndex + 2) % colors.length]);
+      document.documentElement.style.setProperty('--px-theme-4', colors[(colorIndex + 3) % colors.length]);
+      document.documentElement.style.setProperty('--px-theme-5', colors[(colorIndex + 4) % colors.length]);
+      
+      document.querySelector('.left-effects').style.background = `var(--px-theme-${(colorIndex % 5) + 1})`;
+      document.querySelector('.right-effects').style.background = `var(--px-theme-${((colorIndex + 1) % 5) + 1})`;
+  }
+  
+  // Run the function when the page loads
+  updateColors();
+  
+  // Set up to run at midnight each day
+  const now = new Date();
+  const night = new Date(
+      now.getFullYear(),
+      now.getMonth(),
+      now.getDate() + 1, // the next day
+      0, 0, 0 // at 00:00:00 hours
+  );
+  const msToMidnight = night.getTime() - now.getTime();
+  
+  setTimeout(function() {
+      updateColors();
+      // Then run it every 24 hours
+      setInterval(updateColors, 24 * 60 * 60 * 1000);
+  }, msToMidnight);
+  </script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+  <main>
+    <div class="left-effects"></div>
+    <div class="right-effects"></div>
     <nav class="navbar navbar-expand-lg bg-transparent">
       <div class="container">
-        <img
-          src="DigitalDynamo.png"
-          alt="Digital Dynamo Logo"
-          style="height: 40px"
-        />
-        <a
-          class="navbar-toggler border border-0"
-          type="button"
-          data-bs-toggle="modal"
-          data-bs-target="#menuModal"
-          aria-label="Toggle navigation"
-        >
+        <img src="DigitalDynamo.png" alt="Digital Dynamo Logo" style="height: 40px" />
+        <a class="navbar-toggler border border-0" type="button" data-bs-toggle="modal" data-bs-target="#menuModal"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </a>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -83,84 +188,37 @@
       </div>
     </nav>
     <!-- Modal -->
-    <div
-      class="modal fade"
-      id="menuModal"
-      tabindex="-1"
-      aria-labelledby="menuModalLabel"
-      aria-hidden="true"
-    >
+    <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-          <div
-            class="modal-header d-flex justify-content-between align-items-center"
-          >
-            <img
-              src="DigitalDynamo.png"
-              alt="Digital Dynamo Logo"
-              style="height: 40px"
-            />
-            <a
-              type="button"
-              id="xrose"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-              style="border: none; background: none; cursor: pointer"
-            >
+          <div class="modal-header d-flex justify-content-between align-items-center">
+            <img src="DigitalDynamo.png" alt="Digital Dynamo Logo" style="height: 40px" />
+            <a type="button" id="xrose" data-bs-dismiss="modal" aria-label="Close"
+              style="border: none; background: none; cursor: pointer">
               <i class="fa-duotone fa-solid fa-hexagon-xmark fa-2xl"></i>
             </a>
           </div>
           <div class="modal-body">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                  onclick="document.getElementById('xrose').click()"
-                  href="#home"
-                  >Home</a
-                >
+                <a class="nav-link" data-bs-dismiss="modal" aria-label="Close"
+                  onclick="document.getElementById('xrose').click()" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                  onclick="document.getElementById('xrose').click()"
-                  href="#services"
-                  >Services</a
-                >
+                <a class="nav-link" data-bs-dismiss="modal" aria-label="Close"
+                  onclick="document.getElementById('xrose').click()" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                  onclick="document.getElementById('xrose').click()"
-                  href="#about"
-                  >About</a
-                >
+                <a class="nav-link" data-bs-dismiss="modal" aria-label="Close"
+                  onclick="document.getElementById('xrose').click()" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                  onclick="document.getElementById('xrose').click()"
-                  href="#testimonials"
-                  >Testimonials</a
-                >
+                <a class="nav-link" data-bs-dismiss="modal" aria-label="Close"
+                  onclick="document.getElementById('xrose').click()" href="#testimonials">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                  onclick="document.getElementById('xrose').click()"
-                  href="#contact"
-                  >Contact</a
-                >
+                <a class="nav-link" data-bs-dismiss="modal" aria-label="Close"
+                  onclick="document.getElementById('xrose').click()" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -180,233 +238,233 @@
               empowering your brand to shine online. Let us help you explore new
               possibilities and elevate your digital presence!
             </p>
-            <a
-              href="#services"
-              class="btn bg-transparent border border-1 rounded-5 btn-md"
-              >Discover Our Services</a
-            >
+            <a href="#services" class="btn bg-transparent border border-1 rounded-5 btn-md">Discover Our Services</a>
           </div>
           <div class="col-md-6">
-            <img
-              src="hero.png"
-              alt="Digital Dynamo"
-              class="img-fluid rounded"
-            />
+            <img src="hero.png" alt="Digital Dynamo" class="img-fluid rounded" />
           </div>
         </div>
       </div>
     </header>
-   <!-- Services Section -->
-<section id="services" class="py-5">
-  <div class="container">
-    <h2 class="text-center my-4 custom-heading">Our Comprehensive Services</h2>
-    <div class="row justify-content-center mt-5">
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
-          <div class="card-body text-center flex-grow-1">
-            <h5 class="card-title text-primary">Web Development</h5> <br>
-            <p class="card-text">
-              Tailored web development solutions designed to enhance your online presence and engage your audience effectively.
-            </p>
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <h2 class="text-center my-4 custom-heading">Our Comprehensive Services</h2>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
+              <div class="card-body text-center flex-grow-1">
+                <h5 class="card-title text-primary">Web Development</h5> <br>
+                <p class="card-text">
+                  Tailored web development solutions designed to enhance your online presence and engage your audience
+                  effectively.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
+              <div class="card-body text-center flex-grow-1">
+                <h5 class="card-title text-primary">Graphic Design</h5> <br>
+                <p class="card-text">
+                  Innovative graphic design services that capture your brand’s essence and communicate your message
+                  clearly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
+              <div class="card-body text-center flex-grow-1">
+                <h5 class="card-title text-primary">E-commerce Solutions</h5> <br>
+                <p class="card-text">
+                  Comprehensive e-commerce development services to boost your online sales and enhance user experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
+              <div class="card-body text-center flex-grow-1">
+                <h5 class="card-title text-primary">Responsive Design</h5> <br>
+                <p class="card-text">
+                  Responsive design solutions that ensure your website adapts seamlessly to any device for an optimal
+                  user experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
+              <div class="card-body text-center flex-grow-1">
+                <h5 class="card-title text-primary">Brand Identity</h5> <br>
+                <p class="card-text">
+                  Crafting impactful brand identities through custom logos, color schemes, and typography that resonate
+                  with your audience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
+              <div class="card-body text-center flex-grow-1">
+                <h5 class="card-title text-primary">SEO & Analytics</h5> <br>
+                <p class="card-text">
+                  Search engine optimization and analytics services that enhance your website’s visibility and provide
+                  valuable insights.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
-          <div class="card-body text-center flex-grow-1">
-            <h5 class="card-title text-primary">Graphic Design</h5> <br>
-            <p class="card-text">
-              Innovative graphic design services that capture your brand’s essence and communicate your message clearly.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
-          <div class="card-body text-center flex-grow-1">
-            <h5 class="card-title text-primary">E-commerce Solutions</h5> <br>
-            <p class="card-text">
-              Comprehensive e-commerce development services to boost your online sales and enhance user experience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
-          <div class="card-body text-center flex-grow-1">
-            <h5 class="card-title text-primary">Responsive Design</h5> <br>
-            <p class="card-text">
-              Responsive design solutions that ensure your website adapts seamlessly to any device for an optimal user experience.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
-          <div class="card-body text-center flex-grow-1">
-            <h5 class="card-title text-primary">Brand Identity</h5> <br>
-            <p class="card-text">
-              Crafting impactful brand identities through custom logos, color schemes, and typography that resonate with your audience.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm border-1 rounded-4 bg-transparent d-flex flex-column p-3">
-          <div class="card-body text-center flex-grow-1">
-            <h5 class="card-title text-primary">SEO & Analytics</h5> <br>
-            <p class="card-text">
-              Search engine optimization and analytics services that enhance your website’s visibility and provide valuable insights.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="py-5">
-  <div class="container">
-    <h2 class="text-center my-4 custom-heading">Our Portfolio</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-4 mb-4">
-        <div class="card bg-transparent shadow-sm border-1 rounded-4 h-100">
-          <div class="card-body">
-            <h5 class="card-title">Logo Design for EcoSmart</h5>
-            <p class="card-text">Developed a modern logo for EcoSmart, aligning with their sustainable brand vision. This design enhanced their identity in the eco-friendly market.</p>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+      <div class="container">
+        <h2 class="text-center my-4 custom-heading">Our Portfolio</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card bg-transparent shadow-sm border-1 rounded-4 h-100">
+              <div class="card-body">
+                <h5 class="card-title">Logo Design for EcoSmart</h5>
+                <p class="card-text">Developed a modern logo for EcoSmart, aligning with their sustainable brand vision.
+                  This design enhanced their identity in the eco-friendly market.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card bg-transparent shadow-sm border-1 rounded-4 h-100">
+              <div class="card-body">
+                <h5 class="card-title">E-Commerce Platform for ShopNow</h5>
+                <p class="card-text">Created a fully responsive e-commerce platform for ShopNow, featuring real-time
+                  inventory tracking and secure payment gateways, resulting in a 30% increase in sales.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card bg-transparent shadow-sm border-1 rounded-4 h-100">
+              <div class="card-body">
+                <h5 class="card-title">Dynamic Portfolio for Creative Agency</h5>
+                <p class="card-text">Designed a sleek, interactive portfolio website for a creative agency, showcasing
+                  their projects with a focus on user engagement and aesthetic appeal.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card bg-transparent shadow-sm border-1 rounded-4 h-100">
+              <div class="card-body">
+                <h5 class="card-title">Health Tracker Mobile App</h5>
+                <p class="card-text">Developed a mobile application for health tracking, featuring real-time data
+                  visualization and personalized health insights, empowering users to monitor their wellness.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card bg-transparent shadow-sm border-1 rounded-4 h-100">
+              <div class="card-body">
+                <h5 class="card-title">Marketing Graphics for FashionBrand</h5>
+                <p class="card-text">Designed a series of impactful marketing graphics for FashionBrand's campaign,
+                  leading to a 40% increase in social media engagement and brand awareness.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card bg-transparent shadow-sm border-1 rounded-4 h-100">
+              <div class="card-body">
+                <h5 class="card-title">Data Analysis Tool for FinTech Solutions</h5>
+                <p class="card-text">Developed a custom web tool for real-time data analysis, enabling FinTech Solutions
+                  to generate actionable insights, resulting in improved decision-making processes.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card bg-transparent shadow-sm border-1 rounded-4 h-100">
-          <div class="card-body">
-            <h5 class="card-title">E-Commerce Platform for ShopNow</h5>
-            <p class="card-text">Created a fully responsive e-commerce platform for ShopNow, featuring real-time inventory tracking and secure payment gateways, resulting in a 30% increase in sales.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card bg-transparent shadow-sm border-1 rounded-4 h-100">
-          <div class="card-body">
-            <h5 class="card-title">Dynamic Portfolio for Creative Agency</h5>
-            <p class="card-text">Designed a sleek, interactive portfolio website for a creative agency, showcasing their projects with a focus on user engagement and aesthetic appeal.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card bg-transparent shadow-sm border-1 rounded-4 h-100">
-          <div class="card-body">
-            <h5 class="card-title">Health Tracker Mobile App</h5>
-            <p class="card-text">Developed a mobile application for health tracking, featuring real-time data visualization and personalized health insights, empowering users to monitor their wellness.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card bg-transparent shadow-sm border-1 rounded-4 h-100">
-          <div class="card-body">
-            <h5 class="card-title">Marketing Graphics for FashionBrand</h5>
-            <p class="card-text">Designed a series of impactful marketing graphics for FashionBrand's campaign, leading to a 40% increase in social media engagement and brand awareness.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card bg-transparent shadow-sm border-1 rounded-4 h-100">
-          <div class="card-body">
-            <h5 class="card-title">Data Analysis Tool for FinTech Solutions</h5>
-            <p class="card-text">Developed a custom web tool for real-time data analysis, enabling FinTech Solutions to generate actionable insights, resulting in improved decision-making processes.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
-<!-- Include Lightbox JS and CSS -->
-<link href="path/to/lightbox.css" rel="stylesheet" />
-<script src="path/to/lightbox-plus-jquery.js"></script>
+    <!-- Include Lightbox JS and CSS -->
+    <link href="path/to/lightbox.css" rel="stylesheet" />
+    <script src="path/to/lightbox-plus-jquery.js"></script>
 
-<!-- Projects and Client Satisfaction Section -->
-<section id="projects-satisfaction" class="py-5">
-  <div class="container">
-    <h2 class="text-center my-4 custom-heading">Our Achievements & Client Satisfaction</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-4 mb-4">
-        <div class="card shadow-sm border-1 rounded-4 bg-transparent text-center p-3">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Total Projects Completed</h5>
-            <p class="card-text display-4">150+</p>
-            <p class="text-muted">Successfully delivered projects across various industries.</p>
+    <!-- Projects and Client Satisfaction Section -->
+    <section id="projects-satisfaction" class="py-5">
+      <div class="container">
+        <h2 class="text-center my-4 custom-heading">Our Achievements & Client Satisfaction</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-1 rounded-4 bg-transparent text-center p-3">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Total Projects Completed</h5>
+                <p class="card-text display-4">50+</p>
+                <p class="text-muted">Successfully delivered projects across various industries.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-1 rounded-4 bg-transparent text-center p-3">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Client Satisfaction Rate</h5>
+                <p class="card-text display-4">95%</p>
+                <p class="text-muted">Clients trust us for our quality and commitment to excellence.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-1 rounded-4 bg-transparent text-center p-3">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Repeat Clients</h5>
+                <p class="card-text display-4">75%</p>
+                <p class="text-muted">A majority of our clients return for additional services.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="card shadow-sm border-1 rounded-4 bg-transparent text-center p-3">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Client Satisfaction Rate</h5>
-            <p class="card-text display-4">95%</p>
-            <p class="text-muted">Clients trust us for our quality and commitment to excellence.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card shadow-sm border-1 rounded-4 bg-transparent text-center p-3">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Repeat Clients</h5>
-            <p class="card-text display-4">75%</p>
-            <p class="text-muted">A majority of our clients return for additional services.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
     <!-- About Section -->
-<section id="about" class="py-5">
-  <div class="container">
-    <h2 class="text-center my-4 custom-heading">About Digital Dynamo</h2>
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img
-          src="gradient-website-hosting-illustration.png"
-          alt="About Digital Dynamo"
-          class="img-fluid"
-        />
-      </div>
-      <div class="col-md-6">
-        <div class="bd-callout bd-callout-info">
-          <h3 class="text-primary">Our Mission at Digital Dynamo</h3>
-          <p class="text-muted">
-            At Digital Dynamo, we are dedicated to empowering businesses through innovative digital solutions that drive growth and success. Your vision fuels our mission!
-          </p>
-          <h3 class="text-warning">Our Core Values</h3>
-          <p class="text-muted">
-            We stand for integrity, creativity, and client satisfaction. These core values inspire us to deliver outstanding results and build lasting partnerships. Together, we can achieve greatness!
-          </p>
-          <h3 class="text-danger">Why Choose Digital Dynamo?</h3>
-          <p class="text-muted">
-            With a team of passionate experts in web development and graphic design, we customize our services to meet your specific needs, ensuring your brand shines in the digital world. Let’s create something extraordinary together!
-          </p>
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center my-4 custom-heading">About Digital Dynamo</h2>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="gradient-website-hosting-illustration.png" alt="About Digital Dynamo" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <div class="bd-callout bd-callout-info">
+              <h3 class="text-primary">Our Mission at Digital Dynamo</h3>
+              <p class="text-muted">
+                At Digital Dynamo, we are dedicated to empowering businesses through innovative digital solutions that
+                drive growth and success. Your vision fuels our mission!
+              </p>
+              <h3 class="text-warning">Our Core Values</h3>
+              <p class="text-muted">
+                We stand for integrity, creativity, and client satisfaction. These core values inspire us to deliver
+                outstanding results and build lasting partnerships. Together, we can achieve greatness!
+              </p>
+              <h3 class="text-danger">Why Choose Digital Dynamo?</h3>
+              <p class="text-muted">
+                With a team of passionate experts in web development and graphic design, we customize our services to
+                meet your specific needs, ensuring your brand shines in the digital world. Let’s create something
+                extraordinary together!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <section id="testimonials" class="py-5">
       <div class="container">
         <h2 class="text-center my-4 custom-heading">Client Testimonials</h2>
         <div class="row mt-5">
           <div class="col-md-4">
-            <div
-              class="testimonial-card rounded shadow-sm p-4"
-              style="height: 200px"
-            >
+            <div class="testimonial-card rounded shadow-sm p-4" style="height: 200px">
               <blockquote class="blockquote text-center">
                 <p class="mb-0">
                   "Digital Dynamo transformed our online presence in the UK!"
@@ -421,10 +479,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div
-              class="testimonial-card rounded shadow-sm p-4"
-              style="height: 200px"
-            >
+            <div class="testimonial-card rounded shadow-sm p-4" style="height: 200px">
               <blockquote class="blockquote text-center">
                 <p class="mb-0">"Their design work is simply exceptional!"</p>
                 <footer class="blockquote-footer mt-2">
@@ -435,10 +490,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div
-              class="testimonial-card rounded shadow-sm p-4"
-              style="height: 200px"
-            >
+            <div class="testimonial-card rounded shadow-sm p-4" style="height: 200px">
               <blockquote class="blockquote text-center">
                 <p class="mb-0">
                   "We saw a significant boost in traffic thanks to their
@@ -456,10 +508,7 @@
         </div>
         <div class="row mt-5">
           <div class="col-md-4">
-            <div
-              class="testimonial-card rounded shadow-sm p-4"
-              style="height: 200px"
-            >
+            <div class="testimonial-card rounded shadow-sm p-4" style="height: 200px">
               <blockquote class="blockquote text-center">
                 <p class="mb-0">
                   "A fantastic team that exceeded our expectations!"
@@ -473,10 +522,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div
-              class="testimonial-card rounded shadow-sm p-4"
-              style="height: 200px"
-            >
+            <div class="testimonial-card rounded shadow-sm p-4" style="height: 200px">
               <blockquote class="blockquote text-center">
                 <p class="mb-0">"Their innovative solutions are unmatched!"</p>
                 <footer class="blockquote-footer mt-2">
@@ -489,10 +535,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div
-              class="testimonial-card rounded shadow-sm p-4"
-              style="height: 200px"
-            >
+            <div class="testimonial-card rounded shadow-sm p-4" style="height: 200px">
               <blockquote class="blockquote text-center">
                 <p class="mb-0">
                   "Working with Digital Dynamo has been a game changer!"
@@ -537,16 +580,12 @@
           </div>
         </div>
         <div class="text-center mt-4">
-          <a
-            href="mailto:contact@digitaldynamo.com"
-            class="btn bg-transparent border border-1 rounded-5 btn-md"
-            >Get in Touch</a
-          >
+          <a href="mailto:contact@digitaldynamo.com" class="btn bg-transparent border border-1 rounded-5 btn-md">Get in
+            Touch</a>
         </div>
       </div>
     </section>
-    <span
-      style="
+    <span style="
         position: fixed;
         left: 0;
         top: 50%;
@@ -554,163 +593,145 @@
         background-color: black;
         padding: 5px;
         transition: all 2s; /* Transition for 1 second */
-      "
-    >
-      <p
-        style="
+      ">
+      <p style="
           writing-mode: vertical-rl;
           transform: rotate(180deg);
           color: rgb(113, 250, 49);
           margin: 0;
           padding: 0;
           transition: all 2s; /* Transition for 1 second */
-        "
-      >
+        ">
         Digital Dynamo
       </p>
     </span>
-    <span
-      style="
+    <span style="
         position: fixed;
         right: 0;
         top: 50%;
         transform: translateY(-50%);
         /* background-color: black; */
         padding: 5px;
-      "
-    >
-      <p
-        style="
+      ">
+      <p style="
           writing-mode: vertical-rl;
           transform: rotate(0deg);
           color: rgb(113, 250, 49);
           margin: 0;
           padding: 0;
-        "
-      >
-        <a class="p-2" href="#" style="color: rgb(113, 250, 49)"
-          ><i
-            class="fa-brands fa-square-instagram fa-2xl"
-            style="color: #f4254e"
-          ></i
-        ></a>
-        <a class="p-2" href="#" style="color: rgb(113, 250, 49)"
-          ><i
-            class="fa-brands fa-square-whatsapp fa-2xl"
-            style="color: #04d755"
-          ></i
-        ></a>
-        <a class="p-2" href="#" style="color: rgb(113, 250, 49)"
-          ><i
-            class="fa-brands fa-square-facebook fa-2xl"
-            style="color: #1964e6"
-          ></i
-        ></a>
-        <a class="p-2" href="#" style="color: rgb(113, 250, 49)"
-          ><i
-            class="fa-sharp fa-solid fa-share fa-2xl"
-            style="color: #a70be0"
-          ></i
-        ></a>
+        ">
+        <a class="p-2" href="#" style="color: rgb(113, 250, 49)"><i class="fa-brands fa-square-instagram fa-2xl"
+            style="color: #f4254e"></i></a>
+        <a class="p-2" href="#" style="color: rgb(113, 250, 49)"><i class="fa-brands fa-square-whatsapp fa-2xl"
+            style="color: #04d755"></i></a>
+        <a class="p-2" href="#" style="color: rgb(113, 250, 49)"><i class="fa-brands fa-square-facebook fa-2xl"
+            style="color: #1964e6"></i></a>
+        <a class="p-2" href="#" style="color: rgb(113, 250, 49)"><i class="fa-sharp fa-solid fa-share fa-2xl"
+            style="color: #a70be0"></i></a>
       </p>
     </span>
-    <span
-      style="
+    <span style="
         position: fixed;
         left: 2%;
         top: 80%;
         transform: translateY(-50%); /* background-color: black; */
         padding: 5px;
         z-index: 1000;
-      "
-      class="btn border btn-lg border-0 d-md-none"
-    >
-      <i
-        class="fa-duotone fa-solid fa-bars fa-2lx"
-        data-bs-toggle="modal"
-        data-bs-target="#menuModal"
-      ></i>
+      " class="btn border btn-lg border-0 d-md-none">
+      <i class="fa-duotone fa-solid fa-bars fa-2lx" data-bs-toggle="modal" data-bs-target="#menuModal"></i>
     </span>
-    
+
     <!-- Discover Section -->
-<section class="text-dark pt-5 p-md-5">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-3 mb-4">
-        <h5 class="text-uppercase">About Digital Dynamo</h5>
-        <p>
-          Digital Dynamo is a leading agency committed to delivering top-quality services that cater to our clients' unique needs. Our mission is to provide innovative solutions that drive success and foster growth.
-        </p>
+    <section class="text-dark pt-5 p-md-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase">About Digital Dynamo</h5>
+            <p>
+              Digital Dynamo is a leading agency committed to delivering top-quality services that cater to our clients'
+              unique needs. Our mission is to provide innovative solutions that drive success and foster growth.
+            </p>
+          </div>
+          <div class="col mb-4">
+            <h5 class="text-uppercase">Discover More</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Client Testimonials</a></li>
+              <li><a href="#">Frequently Asked Questions</a></li>
+            </ul>
+          </div>
+          <div class="col mb-4">
+            <h5 class="text-uppercase">Resources</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">API Reference Guide</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Community Forum</a></li>
+              <li><a href="#">User Guides</a></li>
+            </ul>
+          </div>
+          <div class="col mb-4">
+            <h5 class="text-uppercase">Connect with Digital Dynamo</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="col mb-4">
-        <h5 class="text-uppercase">Discover More</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">Case Studies</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Client Testimonials</a></li>
-          <li><a href="#">Frequently Asked Questions</a></li>
-        </ul>
-      </div>
-      <div class="col mb-4">
-        <h5 class="text-uppercase">Resources</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">Documentation</a></li>
-          <li><a href="#">API Reference Guide</a></li>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Community Forum</a></li>
-          <li><a href="#">User Guides</a></li>
-        </ul>
-      </div>
-      <div class="col mb-4">
-        <h5 class="text-uppercase">Connect with Digital Dynamo</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">YouTube</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- Footer -->
     <footer class="text-center p-1 m-0">
-      <span class="p-2 bg-dark text-white"
-        >&copy; 2024 Digital Dynamo. All rights reserved.</span
-      >
+      <span class="p-2 bg-dark text-white">&copy; 2024 Digital Dynamo. All rights reserved.</span>
     </footer>
-    <script>
-      // Initialize the chat widget once the DOM is loaded
-      document.addEventListener("DOMContentLoaded", () => {
-        const agentImageUrl =
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6hn5KYtSp4HnteAMMJU0AfLiTn6IKsRXrrg&s";
-        const agentName = "Digital Dynamo AI";
-        const websiteDeveloper = "Namanmahi";
-        const SupportIcon = "fa-duotone fa-solid fa-headset fs-2 "; // Only the class names
-        createChatWidget(
-          agentImageUrl,
-          agentName,
-          websiteDeveloper,
-          SupportIcon
-        );
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const navbarLinks = document.querySelectorAll(".navbar-nav a");
-        navbarLinks.forEach((link) => {
-          link.addEventListener("click", function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute("href").substring(1);
-            const targetSection = document.getElementById(targetId);
-            targetSection.scrollIntoView({ behavior: "smooth" });
-          });
+
+  </main>
+
+  <script>
+    // Initialize the chat widget once the DOM is loaded
+    document.addEventListener("DOMContentLoaded", () => {
+      const agentImageUrl =
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6hn5KYtSp4HnteAMMJU0AfLiTn6IKsRXrrg&s";
+      const agentName = "Digital Dynamo AI";
+      const websiteDeveloper = "Namanmahi";
+      const SupportIcon = "fa-duotone fa-solid fa-headset fs-2 "; // Only the class names
+      createChatWidget(
+        agentImageUrl,
+        agentName,
+        websiteDeveloper,
+        SupportIcon
+      );
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navbarLinks = document.querySelectorAll(".navbar-nav a");
+      navbarLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          const targetSection = document.getElementById(targetId);
+          targetSection.scrollIntoView({ behavior: "smooth" });
         });
       });
-    </script>
-  </body>
+    });
+
+
+    window.onload = function () {
+      const preloader = document.getElementById('preloader');
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 3000); // Show loader for 3000 milliseconds (3 seconds)
+    };
+
+  </script>
+</body>
+
 </html>
